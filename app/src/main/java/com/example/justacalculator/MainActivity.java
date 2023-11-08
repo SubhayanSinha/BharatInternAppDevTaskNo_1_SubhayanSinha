@@ -18,61 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater()) ;
         setContentView(binding.getRoot());
-//        int a = Integer.parseInt(binding.number1.getText().toString()) ;
-//        int b = Integer.parseInt(binding.number2.getText().toString()) ;
-//        a = getinput(binding.number1) ;
-//        b = getinput(binding.number2) ;
 
-//        binding.addition.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                int s = a + b ;
-//                binding.answer.setText("Answer is "+ s);
-//            }
-//        });
-//        binding.subtraction.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                int s = a - b ;
-//                binding.answer.setText("Answer is "+ s);
-//            }
-//        });
-//        binding.multiplication.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                int s = a * b ;
-//                binding.answer.setText("Answer is "+ s);
-//            }
-//        });
-//        binding.division.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                int s = a / b ;
-//                binding.answer.setText("Answer is "+ s);
-//            }
-//        });
-
-//        View.OnClickListener buttonClickListener = new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                switch (v.getId()) {
-//                    case binding.addition:
-//                        // Handle button 1 click
-//                        break;
-//                    case R.id.subtraction:
-//                        // Handle button 2 click
-//                        break;
-//                    case R.id.multiplication:
-//                        // Handle button 3 click
-//                        break;
-//                    case R.id.division:
-//                        // Handle button 4 click
-//                        break;
-//                }
-//            }
-//        };
-
-        // Assign the common OnClickListener to all buttons
         binding.addition.setOnClickListener(this);
         binding.subtraction.setOnClickListener(this);
         binding.multiplication.setOnClickListener(this);
